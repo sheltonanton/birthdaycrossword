@@ -1,0 +1,24 @@
+<h4>Register</h4>
+<BsForm @onSubmit={{action "submit"}} as |form|>
+  <form.group>
+    <label class="control-label">Name</label>
+    <input value={{name}} class="form-control" type="text">
+  </form.group>
+  <form.group>
+    <label class="control-label">Email</label>
+    <input value={{email}} class="form-control" type="text">
+  </form.group>
+  <form.group>
+    <label class="control-label">Password</label>
+    <input value={{password}} class="form-control" type="text">
+  </form.group>
+  <form.group>
+    <label class="control-label">Re-enter Password</label>
+    <input value={{reenter}} class="form-control" type="text">
+  </form.group>
+  <form.group>
+    <label class="control-label">DOB</label>
+    {{bootstrap-datepicker startDate="01/01/1990" class="form-control" value=expiresAt}}
+  </form.group>
+  <BsButton @defaultText="Register" @type="primary" @buttonType="submit" />
+</BsForm>

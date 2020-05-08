@@ -6,6 +6,7 @@
     <title>BirthdayCrossword</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="584685314295-s9hq0110j97adsfimk8ht6eos6jqf2cr.apps.googleusercontent.com">
 
     {{content-for "head"}}
 
@@ -16,9 +17,9 @@
   </head>
   <body>
     {{content-for "body"}}
-
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/birthday-crossword.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     {{content-for "body-footer"}}
   </body>

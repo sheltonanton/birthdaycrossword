@@ -1,0 +1,26 @@
+<h4>Login</h4>
+<BsForm @onSubmit={{action "submit"}} as |form|>
+  <form.group>
+    <label class="control-label">Email</label>
+    <input value={{email}} class="form-control" type="text">
+  </form.group>
+  <form.group>
+    <label class="control-label">Password</label>
+    <input value={{password}} class="form-control" type="text">
+  </form.group>
+  <BsButton @defaultText="Log In" @type="primary" @buttonType="submit" />
+  <a href="/register" class='pad-right'> Not yet registered? Register here </a>
+</BsForm>
+<hr>
+<div class='container'>
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <p style='text-align: center;'>- Or -</p> 
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <div class="g-signin2" data-onsuccess={{action "onSignIn"}}></div>
+    </div>
+  </div>
+</div>
